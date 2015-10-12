@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4248C8F31BB2B83500D157D8 /* QBImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4248C8F21BB2B83500D157D8 /* QBImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4248C90E1BB2B92E00D157D8 /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4248C9071BB2B92E00D157D8 /* QBImagePicker.strings */; settings = {ASSET_TAGS = (); }; };
-		4248C90F1BB2B92E00D157D8 /* QBImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248C90C1BB2B92E00D157D8 /* QBImagePicker.storyboard */; settings = {ASSET_TAGS = (); }; };
 		4248C9121BB2BA5000D157D8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248C9111BB2BA5000D157D8 /* AssetsLibrary.framework */; };
 		4248C9141BB2BA5400D157D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248C9131BB2BA5400D157D8 /* UIKit.framework */; };
 		4248C9161BB2BA5A00D157D8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248C9151BB2BA5A00D157D8 /* QuartzCore.framework */; };
@@ -29,18 +27,26 @@
 		4248C9341BB2BAC200D157D8 /* QBVideoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248C9241BB2BAC200D157D8 /* QBVideoIconView.m */; settings = {ASSET_TAGS = (); }; };
 		4248C9351BB2BAC200D157D8 /* QBVideoIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4248C9251BB2BAC200D157D8 /* QBVideoIndicatorView.h */; settings = {ASSET_TAGS = (); }; };
 		4248C9361BB2BAC200D157D8 /* QBVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248C9261BB2BAC200D157D8 /* QBVideoIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
+		42A5E3A01BC760AB00E6E385 /* QBImagePicker.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42A5E3911BC75E1D00E6E385 /* QBImagePicker.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42A5E39F1BC7609800E6E385 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				42A5E3A01BC760AB00E6E385 /* QBImagePicker.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4248C8EF1BB2B83500D157D8 /* QBImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QBImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4248C8F21BB2B83500D157D8 /* QBImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBImagePicker.h; sourceTree = "<group>"; };
 		4248C8F41BB2B83500D157D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4248C9081BB2B92E00D157D8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4248C9091BB2B92E00D157D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4248C90A1BB2B92E00D157D8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4248C90B1BB2B92E00D157D8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4248C90C1BB2B92E00D157D8 /* QBImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QBImagePicker.storyboard; sourceTree = "<group>"; };
-		4248C90D1BB2B92E00D157D8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/QBImagePicker.strings"; sourceTree = "<group>"; };
 		4248C9111BB2BA5000D157D8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		4248C9131BB2BA5400D157D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4248C9151BB2BA5A00D157D8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -60,6 +66,7 @@
 		4248C9241BB2BAC200D157D8 /* QBVideoIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBVideoIconView.m; sourceTree = "<group>"; };
 		4248C9251BB2BAC200D157D8 /* QBVideoIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBVideoIndicatorView.h; sourceTree = "<group>"; };
 		4248C9261BB2BAC200D157D8 /* QBVideoIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBVideoIndicatorView.m; sourceTree = "<group>"; };
+		42A5E3911BC75E1D00E6E385 /* QBImagePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QBImagePicker.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +129,7 @@
 		4248C9061BB2B92E00D157D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4248C9071BB2B92E00D157D8 /* QBImagePicker.strings */,
-				4248C90C1BB2B92E00D157D8 /* QBImagePicker.storyboard */,
+				42A5E3911BC75E1D00E6E385 /* QBImagePicker.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 				4248C8EB1BB2B83500D157D8 /* Frameworks */,
 				4248C8EC1BB2B83500D157D8 /* Headers */,
 				4248C8ED1BB2B83500D157D8 /* Resources */,
+				42A5E39F1BC7609800E6E385 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -218,8 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4248C90E1BB2B92E00D157D8 /* QBImagePicker.strings in Resources */,
-				4248C90F1BB2B92E00D157D8 /* QBImagePicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,21 +247,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4248C9071BB2B92E00D157D8 /* QBImagePicker.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4248C9081BB2B92E00D157D8 /* de */,
-				4248C9091BB2B92E00D157D8 /* en */,
-				4248C90A1BB2B92E00D157D8 /* es */,
-				4248C90B1BB2B92E00D157D8 /* ja */,
-				4248C90D1BB2B92E00D157D8 /* zh-Hans */,
-			);
-			name = QBImagePicker.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4248C8F51BB2B83500D157D8 /* Debug */ = {
