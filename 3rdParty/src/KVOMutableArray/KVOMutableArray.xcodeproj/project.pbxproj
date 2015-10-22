@@ -15,8 +15,25 @@
 		421E74361BD8773C00BD40BF /* KVOMutableArrayObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E742E1BD8773C00BD40BF /* KVOMutableArrayObserver.m */; settings = {ASSET_TAGS = (); }; };
 		421E74371BD8773C00BD40BF /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E742F1BD8773C00BD40BF /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421E74381BD8773C00BD40BF /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E74301BD8773C00BD40BF /* NSObject+BlockObservation.m */; settings = {ASSET_TAGS = (); }; };
-		421E74451BD87C2800BD40BF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E74441BD87C2800BD40BF /* ReactiveCocoa.framework */; settings = {ASSET_TAGS = (); }; };
+		421E74841BD8865100BD40BF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E74811BD8864300BD40BF /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		421E74801BD8864300BD40BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421E747C1BD8864200BD40BF /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0ED939111BB6024B000C6FBA;
+			remoteInfo = ReactiveCocoa;
+		};
+		421E74821BD8864C00BD40BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421E747C1BD8864200BD40BF /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED939101BB6024B000C6FBA;
+			remoteInfo = ReactiveCocoa;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		421E741E1BD876E600BD40BF /* KVOMutableArray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOMutableArray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +46,7 @@
 		421E742E1BD8773C00BD40BF /* KVOMutableArrayObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOMutableArrayObserver.m; sourceTree = "<group>"; };
 		421E742F1BD8773C00BD40BF /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockObservation.h"; sourceTree = "<group>"; };
 		421E74301BD8773C00BD40BF /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockObservation.m"; sourceTree = "<group>"; };
-		421E74441BD87C2800BD40BF /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../../output/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		421E747C1BD8864200BD40BF /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = ../ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421E74451BD87C2800BD40BF /* ReactiveCocoa.framework in Frameworks */,
+				421E74841BD8865100BD40BF /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +64,7 @@
 		421E74141BD876E600BD40BF = {
 			isa = PBXGroup;
 			children = (
-				421E74441BD87C2800BD40BF /* ReactiveCocoa.framework */,
+				421E747C1BD8864200BD40BF /* ReactiveCocoa.xcodeproj */,
 				421E74201BD876E600BD40BF /* KVOMutableArray */,
 				421E741F1BD876E600BD40BF /* Products */,
 			);
@@ -75,6 +92,14 @@
 				421E74231BD876E600BD40BF /* Info.plist */,
 			);
 			path = KVOMutableArray;
+			sourceTree = "<group>";
+		};
+		421E747D1BD8864200BD40BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				421E74811BD8864300BD40BF /* ReactiveCocoa.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +131,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				421E74831BD8864C00BD40BF /* PBXTargetDependency */,
 			);
 			name = KVOMutableArray;
 			productName = KVOMutableArray;
@@ -136,12 +162,28 @@
 			mainGroup = 421E74141BD876E600BD40BF;
 			productRefGroup = 421E741F1BD876E600BD40BF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 421E747D1BD8864200BD40BF /* Products */;
+					ProjectRef = 421E747C1BD8864200BD40BF /* ReactiveCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				421E741D1BD876E600BD40BF /* KVOMutableArray */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		421E74811BD8864300BD40BF /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 421E74801BD8864300BD40BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		421E741C1BD876E600BD40BF /* Resources */ = {
@@ -166,6 +208,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		421E74831BD8864C00BD40BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveCocoa;
+			targetProxy = 421E74821BD8864C00BD40BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		421E74241BD876E600BD40BF /* Debug */ = {
