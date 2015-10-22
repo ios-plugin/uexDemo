@@ -12,7 +12,7 @@
 		420133FB1BAD5E8E00E79532 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 420133E31BAD5E8E00E79532 /* MASCompositeConstraint.m */; settings = {ASSET_TAGS = (); }; };
 		420133FC1BAD5E8E00E79532 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 420133E41BAD5E8E00E79532 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420133FD1BAD5E8E00E79532 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 420133E51BAD5E8E00E79532 /* MASConstraint.m */; settings = {ASSET_TAGS = (); }; };
-		420133FE1BAD5E8E00E79532 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 420133E61BAD5E8E00E79532 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		420133FE1BAD5E8E00E79532 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 420133E61BAD5E8E00E79532 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		420133FF1BAD5E8E00E79532 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 420133E71BAD5E8E00E79532 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420134001BAD5E8E00E79532 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 420133E81BAD5E8E00E79532 /* MASConstraintMaker.m */; settings = {ASSET_TAGS = (); }; };
 		420134011BAD5E8E00E79532 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 420133E91BAD5E8E00E79532 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -139,13 +139,13 @@
 				420134061BAD5E8E00E79532 /* MASViewConstraint.h in Headers */,
 				4201340A1BAD5E8E00E79532 /* NSArray+MASShorthandAdditions.h in Headers */,
 				420133FF1BAD5E8E00E79532 /* MASConstraintMaker.h in Headers */,
-				420133FE1BAD5E8E00E79532 /* MASConstraint+Private.h in Headers */,
 				420134031BAD5E8E00E79532 /* MASUtilities.h in Headers */,
 				420134081BAD5E8E00E79532 /* NSArray+MASAdditions.h in Headers */,
 				420134101BAD5E8E00E79532 /* ViewController+MASAdditions.h in Headers */,
 				420133FA1BAD5E8E00E79532 /* MASCompositeConstraint.h in Headers */,
 				4201340B1BAD5E8E00E79532 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
 				420133FC1BAD5E8E00E79532 /* MASConstraint.h in Headers */,
+				420133FE1BAD5E8E00E79532 /* MASConstraint+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

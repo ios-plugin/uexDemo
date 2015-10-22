@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		421E74311BD8773C00BD40BF /* KVOMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E74291BD8773C00BD40BF /* KVOMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421E74321BD8773C00BD40BF /* KVOMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E742A1BD8773C00BD40BF /* KVOMutableArray.m */; settings = {ASSET_TAGS = (); }; };
-		421E74331BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E742B1BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421E74331BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E742B1BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		421E74341BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E742C1BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.m */; settings = {ASSET_TAGS = (); }; };
-		421E74351BD8773C00BD40BF /* KVOMutableArrayObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E742D1BD8773C00BD40BF /* KVOMutableArrayObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421E74351BD8773C00BD40BF /* KVOMutableArrayObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E742D1BD8773C00BD40BF /* KVOMutableArrayObserver.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		421E74361BD8773C00BD40BF /* KVOMutableArrayObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E742E1BD8773C00BD40BF /* KVOMutableArrayObserver.m */; settings = {ASSET_TAGS = (); }; };
 		421E74371BD8773C00BD40BF /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 421E742F1BD8773C00BD40BF /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421E74381BD8773C00BD40BF /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E74301BD8773C00BD40BF /* NSObject+BlockObservation.m */; settings = {ASSET_TAGS = (); }; };
@@ -85,9 +85,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				421E74311BD8773C00BD40BF /* KVOMutableArray.h in Headers */,
-				421E74331BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.h in Headers */,
-				421E74351BD8773C00BD40BF /* KVOMutableArrayObserver.h in Headers */,
 				421E74371BD8773C00BD40BF /* NSObject+BlockObservation.h in Headers */,
+				421E74351BD8773C00BD40BF /* KVOMutableArrayObserver.h in Headers */,
+				421E74331BD8773C00BD40BF /* KVOMutableArray+ReactiveCocoaSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
