@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E82F7491BAE619A00AA8C09 /* Ono.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E82F7481BAE619A00AA8C09 /* Ono.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E82F7521BAE61BA00AA8C09 /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E82F7501BAE61BA00AA8C09 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E82F7531BAE61BA00AA8C09 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E82F7511BAE61BA00AA8C09 /* ONOXMLDocument.m */; settings = {ASSET_TAGS = (); }; };
+		0E82F7531BAE61BA00AA8C09 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E82F7511BAE61BA00AA8C09 /* ONOXMLDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
