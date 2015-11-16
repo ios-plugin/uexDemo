@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		42F20E4C1BE053A800A25E73 /* RSKInternalUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F20E4A1BE053A800A25E73 /* RSKInternalUtility.h */; };
 		42F20E4D1BE053A800A25E73 /* RSKInternalUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F20E4B1BE053A800A25E73 /* RSKInternalUtility.m */; };
-		42F20E511BE0542B00A25E73 /* RSKImageCropperStrings.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42F20E4E1BE053E400A25E73 /* RSKImageCropperStrings.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42F20E511BE0542B00A25E73 /* RSKImageCropperStrings.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42F20E4E1BE053E400A25E73 /* RSKImageCropperStrings.bundle */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5BE39D91B32BD2B00ECDF88 /* RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BE39CB1B32BD2B00ECDF88 /* RSKImageCropper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5BE39DA1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BE39CC1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h */; };
 		A5BE39DB1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BE39CD1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.m */; };

@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		42772B891BE0BE0D009DC9ED /* FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B881BE0BE0D009DC9ED /* FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42772B981BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B901BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.h */; };
+		42772B981BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B901BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42772B991BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42772B911BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.m */; };
-		42772B9A1BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B921BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.h */; };
+		42772B9A1BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B921BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42772B9B1BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42772B931BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.m */; };
-		42772B9C1BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B941BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.h */; };
+		42772B9C1BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B941BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42772B9D1BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42772B951BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.m */; };
-		42772B9E1BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B961BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.h */; };
+		42772B9E1BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 42772B961BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42772B9F1BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 42772B971BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.m */; };
 /* End PBXBuildFile section */
 
@@ -313,6 +313,7 @@
 				42772B8F1BE0BE0D009DC9ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
