@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		42F927A31BF9D7BB0073B601 /* YYImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927A21BF9D7BB0073B601 /* YYImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42F927B31BF9D8790073B601 /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927AA1BF9D8790073B601 /* YYAnimatedImageView.h */; };
+		42F927B31BF9D8790073B601 /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927AA1BF9D8790073B601 /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F927B41BF9D8790073B601 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F927AB1BF9D8790073B601 /* YYAnimatedImageView.m */; };
-		42F927B51BF9D8790073B601 /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927AC1BF9D8790073B601 /* YYFrameImage.h */; };
+		42F927B51BF9D8790073B601 /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927AC1BF9D8790073B601 /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F927B61BF9D8790073B601 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F927AD1BF9D8790073B601 /* YYFrameImage.m */; };
 		42F927B71BF9D8790073B601 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F927AE1BF9D8790073B601 /* YYImage.m */; };
-		42F927B81BF9D8790073B601 /* YYImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927AF1BF9D8790073B601 /* YYImageCoder.h */; };
+		42F927B81BF9D8790073B601 /* YYImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927AF1BF9D8790073B601 /* YYImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F927B91BF9D8790073B601 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F927B01BF9D8790073B601 /* YYImageCoder.m */; };
-		42F927BA1BF9D8790073B601 /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927B11BF9D8790073B601 /* YYSpriteSheetImage.h */; };
+		42F927BA1BF9D8790073B601 /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F927B11BF9D8790073B601 /* YYSpriteSheetImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F927BB1BF9D8790073B601 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F927B21BF9D8790073B601 /* YYSpriteSheetImage.m */; };
 		42F927BD1BF9DA800073B601 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F927BC1BF9DA800073B601 /* WebP.framework */; };
 		42F927C01BF9DAF50073B601 /* WebP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42F927BC1BF9DA800073B601 /* WebP.framework */; };

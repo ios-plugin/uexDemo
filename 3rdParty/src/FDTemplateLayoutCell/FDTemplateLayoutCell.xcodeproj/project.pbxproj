@@ -83,8 +83,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42772B981BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.h in Headers */,
 				42772B891BE0BE0D009DC9ED /* FDTemplateLayoutCell.h in Headers */,
+				42772B981BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCell.h in Headers */,
 				42772B9E1BE0BE18009DC9ED /* UITableView+FDTemplateLayoutCellDebug.h in Headers */,
 				42772B9C1BE0BE18009DC9ED /* UITableView+FDIndexPathHeightCache.h in Headers */,
 				42772B9A1BE0BE18009DC9ED /* UITableView+FDKeyedHeightCache.h in Headers */,
