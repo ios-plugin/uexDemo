@@ -100,12 +100,12 @@
         
         CGFloat deltaH = [self heightForContentBreakView];
         // 刚刷新完毕
-        if (MJRefreshStateRefreshing == oldState && deltaH > 0 && self.scrollView.totalDataCount != self.lastRefreshCount) {
+        if (MJRefreshStateRefreshing == oldState && deltaH > 0 && self.scrollView.mj_totalDataCount != self.lastRefreshCount) {
             self.scrollView.mj_offsetY = self.scrollView.mj_offsetY;
         }
     } else if (state == MJRefreshStateRefreshing) {
         // 记录刷新前的数量
-        self.lastRefreshCount = self.scrollView.totalDataCount;
+        self.lastRefreshCount = self.scrollView.mj_totalDataCount;
         
         [UIView animateWithDuration:MJRefreshFastAnimationDuration animations:^{
             CGFloat bottom = self.mj_h + self.scrollViewOriginalInset.bottom;
@@ -131,6 +131,17 @@
         });
     } else {
         [super endRefreshing];
+    }
+}
+
+- (void)noticeNoMoreData
+{
+    if ([self.scrollView isKindOfClass:[UICollectionView class]]) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [super noticeNoMoreData];
+        });
+    } else {
+        [super noticeNoMoreData];
     }
 }
 
