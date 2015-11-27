@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4205EDBE1BB0E6E500D03405 /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 4205EDBD1BB0E6E500D03405 /* XMLDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4205EDC61BB0E70800D03405 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4205EDC51BB0E70800D03405 /* XMLDictionary.m */; settings = {ASSET_TAGS = (); }; };
+		4205EDC61BB0E70800D03405 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4205EDC51BB0E70800D03405 /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -218,7 +218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
