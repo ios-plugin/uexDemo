@@ -35,12 +35,11 @@ echo "复制引擎工程..."
 cp -rf ${enginePath}/AppCanPlugin $projPath
 
 echo "编译通用的引擎静态库..."
-xcodebuild -project ${enginePath}/AppCanEngine/AppCanEngine.xcodeproj -scheme AppCanPluginDevEngine clean
-xcodebuild -project ${enginePath}/AppCanEngine/AppCanEngine.xcodeproj -scheme AppCanPluginDevEngine build
+xctool -project ${enginePath}/AppCanEngine/AppCanEngine.xcodeproj -scheme AppCanPluginDevEngine clean
+xctool -project ${enginePath}/AppCanEngine/AppCanEngine.xcodeproj -scheme AppCanPluginDevEngine build
 echo "替换引擎文件..."
 cp -rf ${enginePath}/AppCanEngine/libAppCanEngine.a ${projPath}/AppCanPlugin/AppCanPlugin/engine/libAppCanEngine.a
 echo "编译通用的第三方依赖库"
-close
 cd ${shellPath}/3rdParty/
 sh compile.sh dev
 cd -
