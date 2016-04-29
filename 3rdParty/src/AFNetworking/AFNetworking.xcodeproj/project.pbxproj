@@ -34,7 +34,7 @@
 		42AB29D31C55AD1000863D06 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AB29BF1C55AD1000863D06 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AB29D41C55AD1000863D06 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AB29C01C55AD1000863D06 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AB29D51C55AD1000863D06 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB29C11C55AD1000863D06 /* UIImageView+AFNetworking.m */; };
-		42AB29D61C55AD1000863D06 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AB29C21C55AD1000863D06 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AB29D61C55AD1000863D06 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AB29C21C55AD1000863D06 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		42AB29D71C55AD1000863D06 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AB29C31C55AD1000863D06 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AB29D81C55AD1000863D06 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB29C41C55AD1000863D06 /* UIProgressView+AFNetworking.m */; };
 		42AB29D91C55AD1000863D06 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AB29C51C55AD1000863D06 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,7 +169,6 @@
 				42AB29D11C55AD1000863D06 /* UIButton+AFNetworking.h in Headers */,
 				42AB29CB1C55AD1000863D06 /* AFImageDownloader.h in Headers */,
 				42AB29CF1C55AD1000863D06 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				42AB29D61C55AD1000863D06 /* UIKit+AFNetworking.h in Headers */,
 				42AB29CD1C55AD1000863D06 /* AFNetworkActivityIndicatorManager.h in Headers */,
 				42AB29DB1C55AD1000863D06 /* UIWebView+AFNetworking.h in Headers */,
 				42AB29D31C55AD1000863D06 /* UIImage+AFNetworking.h in Headers */,
@@ -182,6 +181,7 @@
 				0E82F6EB1BAE588900AA8C09 /* AFNetworkReachabilityManager.h in Headers */,
 				0E82F6F51BAE588900AA8C09 /* AFURLSessionManager.h in Headers */,
 				0E82F6F11BAE588900AA8C09 /* AFURLRequestSerialization.h in Headers */,
+				42AB29D61C55AD1000863D06 /* UIKit+AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
