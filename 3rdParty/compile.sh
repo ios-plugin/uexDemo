@@ -5,7 +5,6 @@
 # 根据是否#开头，判断是否忽略
 
 
-var=$1
 
 
 function compile_device(){
@@ -42,23 +41,23 @@ function compile_dev(){
 	fi
 }
 
-for LINE in `cat ./compile_list`  
-do   
-	if [[  $# -gt 0  &&  $var = "simu" ]];then
-	compile_simulator $LINE
-	elif [[  $# -gt 0  &&  $var = "dev" ]];then
-	compile_dev $LINE
-	else
-    compile_device $LINE
-	fi
-done
+var=$2
+LINE=$1
 
-for LINE in `cat ./compile_list`  
-do  
-	if [ -d "./output/${LINE}.framework" ];then
-		lipo -info "./output/${LINE}.framework/${LINE}"
-	fi
-done
+if [[  $# -gt 0  &&  $var = "simu" ]];then
+	compile_simulator $LINE
+elif [[  $# -gt 0  &&  $var = "dev" ]];then
+	compile_dev $LINE
+else
+	compile_device $LINE
+fi
+
+
+
+if [ -d "./output/${LINE}.framework" ];then
+	lipo -info "./output/${LINE}.framework/${LINE}"
+fi
+
 
 
 
