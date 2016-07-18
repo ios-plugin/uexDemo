@@ -13,7 +13,7 @@
 		42241A541D38BA8300F32386 /* MQTTCFSocketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A2D1D38BA8300F32386 /* MQTTCFSocketEncoder.m */; };
 		42241A551D38BA8300F32386 /* MQTTCFSocketTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A2E1D38BA8300F32386 /* MQTTCFSocketTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A561D38BA8300F32386 /* MQTTCFSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A2F1D38BA8300F32386 /* MQTTCFSocketTransport.m */; };
-		42241A571D38BA8300F32386 /* MQTTClient-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 42241A301D38BA8300F32386 /* MQTTClient-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		42241A571D38BA8300F32386 /* MQTTClient-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 42241A301D38BA8300F32386 /* MQTTClient-Prefix.pch */; };
 		42241A581D38BA8300F32386 /* MQTTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A311D38BA8300F32386 /* MQTTClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A591D38BA8300F32386 /* MQTTCoreDataPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A321D38BA8300F32386 /* MQTTCoreDataPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A5A1D38BA8300F32386 /* MQTTCoreDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A331D38BA8300F32386 /* MQTTCoreDataPersistence.m */; };
@@ -21,7 +21,7 @@
 		42241A5C1D38BA8300F32386 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A351D38BA8300F32386 /* MQTTDecoder.m */; };
 		42241A5D1D38BA8300F32386 /* MQTTInMemoryPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A361D38BA8300F32386 /* MQTTInMemoryPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A5E1D38BA8300F32386 /* MQTTInMemoryPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A371D38BA8300F32386 /* MQTTInMemoryPersistence.m */; };
-		42241A5F1D38BA8300F32386 /* MQTTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A381D38BA8300F32386 /* MQTTLog.h */; };
+		42241A5F1D38BA8300F32386 /* MQTTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A381D38BA8300F32386 /* MQTTLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A601D38BA8300F32386 /* MQTTMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A391D38BA8300F32386 /* MQTTMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A611D38BA8300F32386 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A3A1D38BA8300F32386 /* MQTTMessage.m */; };
 		42241A621D38BA8300F32386 /* MQTTPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A3B1D38BA8300F32386 /* MQTTPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,7 +45,6 @@
 		42241A741D38BA8300F32386 /* MQTTTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A4D1D38BA8300F32386 /* MQTTTransport.m */; };
 		42241A751D38BA8300F32386 /* MQTTWebsocketTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 42241A4F1D38BA8300F32386 /* MQTTWebsocketTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42241A761D38BA8300F32386 /* MQTTWebsocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42241A501D38BA8300F32386 /* MQTTWebsocketTransport.m */; };
-		42241AF01D38C23500F32386 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42241AED1D38C22300F32386 /* SocketRocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42241AF01D38C23500F32386 /* SocketRocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,27 +217,27 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42241A581D38BA8300F32386 /* MQTTClient.h in Headers */,
 				42241A731D38BA8300F32386 /* MQTTTransport.h in Headers */,
-				42241A511D38BA8300F32386 /* MQTTCFSocketDecoder.h in Headers */,
 				42241A531D38BA8300F32386 /* MQTTCFSocketEncoder.h in Headers */,
 				42241A651D38BA8300F32386 /* MQTTSessionLegacy.h in Headers */,
-				42241A711D38BA8300F32386 /* MQTTSSLSecurityPolicyTransport.h in Headers */,
-				42241A5D1D38BA8300F32386 /* MQTTInMemoryPersistence.h in Headers */,
-				42241A571D38BA8300F32386 /* MQTTClient-Prefix.pch in Headers */,
 				42241A591D38BA8300F32386 /* MQTTCoreDataPersistence.h in Headers */,
-				42241A6F1D38BA8300F32386 /* MQTTSSLSecurityPolicyEncoder.h in Headers */,
 				42241A631D38BA8300F32386 /* MQTTSession.h in Headers */,
-				42241A671D38BA8300F32386 /* MQTTSessionManager.h in Headers */,
 				42241A621D38BA8300F32386 /* MQTTPersistence.h in Headers */,
 				42241A5B1D38BA8300F32386 /* MQTTDecoder.h in Headers */,
 				42241A691D38BA8300F32386 /* MQTTSessionSynchron.h in Headers */,
-				42241A581D38BA8300F32386 /* MQTTClient.h in Headers */,
 				42241A6D1D38BA8300F32386 /* MQTTSSLSecurityPolicyDecoder.h in Headers */,
 				42241A6B1D38BA8300F32386 /* MQTTSSLSecurityPolicy.h in Headers */,
 				42241A601D38BA8300F32386 /* MQTTMessage.h in Headers */,
-				42241A751D38BA8300F32386 /* MQTTWebsocketTransport.h in Headers */,
 				42241A551D38BA8300F32386 /* MQTTCFSocketTransport.h in Headers */,
+				42241A751D38BA8300F32386 /* MQTTWebsocketTransport.h in Headers */,
+				42241A711D38BA8300F32386 /* MQTTSSLSecurityPolicyTransport.h in Headers */,
+				42241A6F1D38BA8300F32386 /* MQTTSSLSecurityPolicyEncoder.h in Headers */,
+				42241A671D38BA8300F32386 /* MQTTSessionManager.h in Headers */,
 				42241A5F1D38BA8300F32386 /* MQTTLog.h in Headers */,
+				42241A511D38BA8300F32386 /* MQTTCFSocketDecoder.h in Headers */,
+				42241A5D1D38BA8300F32386 /* MQTTInMemoryPersistence.h in Headers */,
+				42241A571D38BA8300F32386 /* MQTTClient-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +506,7 @@
 				42241A291D38BA4700F32386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
