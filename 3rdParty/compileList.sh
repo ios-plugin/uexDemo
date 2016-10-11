@@ -1,10 +1,5 @@
 #! /bin/bash
 
-
-
-# 根据是否#开头，判断是否忽略
-
-
 var=$1
 
 
@@ -12,7 +7,7 @@ function compile_device(){
 	name=$1
 	if [ -d "./src/$name" ];then
 		cd ./src/$name
-		xcodebuild -project ${name}.xcodeproj -scheme $name clean | xcpretty
+		xcodebuild -configuration Release -project ${name}.xcodeproj -scheme $name clean | xcpretty
 		xcodebuild -configuration Release -sdk iphoneos -project ${name}.xcodeproj -scheme $name build | xcpretty
 		cd -
 	fi
@@ -21,7 +16,7 @@ function compile_simulator(){
 	name=$1
 	if [ -d "./src/$name" ];then
 		cd ./src/$name
-		xcodebuild -project ${name}.xcodeproj -scheme $name clean | xcpretty
+		xcodebuild -configuration Release -project ${name}.xcodeproj -scheme $name clean | xcpretty
 		xcodebuild -configuration Release -sdk iphonesimulator -project ${name}.xcodeproj -scheme $name build | xcpretty
 		cd -
 	fi
