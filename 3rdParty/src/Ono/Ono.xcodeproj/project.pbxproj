@@ -10,6 +10,7 @@
 		0E82F7491BAE619A00AA8C09 /* Ono.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E82F7481BAE619A00AA8C09 /* Ono.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E82F7521BAE61BA00AA8C09 /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E82F7501BAE61BA00AA8C09 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E82F7531BAE61BA00AA8C09 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E82F7511BAE61BA00AA8C09 /* ONOXMLDocument.m */; };
+		42F788AD1D9514960094AA05 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F788AC1D9514960094AA05 /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		0E82F74A1BAE619A00AA8C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E82F7501BAE61BA00AA8C09 /* ONOXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONOXMLDocument.h; sourceTree = "<group>"; };
 		0E82F7511BAE61BA00AA8C09 /* ONOXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONOXMLDocument.m; sourceTree = "<group>"; };
+		42F788AC1D9514960094AA05 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F788AD1D9514960094AA05 /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +39,7 @@
 			children = (
 				0E82F7471BAE619A00AA8C09 /* Ono */,
 				0E82F7461BAE619A00AA8C09 /* Products */,
+				42F788AB1D9514960094AA05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +60,14 @@
 				0E82F74A1BAE619A00AA8C09 /* Info.plist */,
 			);
 			path = Ono;
+			sourceTree = "<group>";
+		};
+		42F788AB1D9514960094AA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F788AC1D9514960094AA05 /* libxml2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,10 +255,10 @@
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = Ono/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.3rdParty.Ono;
@@ -266,10 +278,10 @@
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = Ono/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.3rdParty.Ono;

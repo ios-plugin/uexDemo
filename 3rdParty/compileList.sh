@@ -12,8 +12,8 @@ function compile_device(){
 	name=$1
 	if [ -d "./src/$name" ];then
 		cd ./src/$name
-		xctool -project ${name}.xcodeproj -scheme $name clean
-		xctool -configuration Release -sdk iphoneos -project ${name}.xcodeproj -scheme $name build
+		xcodebuild -project ${name}.xcodeproj -scheme $name clean | xcpretty
+		xcodebuild -configuration Release -sdk iphoneos -project ${name}.xcodeproj -scheme $name build | xcpretty
 		cd -
 	fi
 }
@@ -21,8 +21,8 @@ function compile_simulator(){
 	name=$1
 	if [ -d "./src/$name" ];then
 		cd ./src/$name
-		xctool -project ${name}.xcodeproj -scheme $name clean
-		xctool -configuration Release -sdk iphonesimulator -project ${name}.xcodeproj -scheme $name build
+		xcodebuild -project ${name}.xcodeproj -scheme $name clean | xcpretty
+		xcodebuild -configuration Release -sdk iphonesimulator -project ${name}.xcodeproj -scheme $name build | xcpretty
 		cd -
 	fi
 }

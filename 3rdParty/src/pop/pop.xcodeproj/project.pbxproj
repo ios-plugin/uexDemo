@@ -58,6 +58,11 @@
 		4247B1491C05455B0048CCDF /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4247B1171C05455B0048CCDF /* TransformationMatrix.cpp */; };
 		4247B14A1C05455B0048CCDF /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4247B1181C05455B0048CCDF /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4247B14B1C05455B0048CCDF /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4247B1191C05455B0048CCDF /* UnitBezier.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		42F788BE1D951A630094AA05 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F788BD1D951A630094AA05 /* libstdc++.tbd */; };
+		42F788C01D951A850094AA05 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F788BF1D951A850094AA05 /* CoreImage.framework */; };
+		42F788C41D951A9A0094AA05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F788C31D951A9A0094AA05 /* CoreGraphics.framework */; };
+		42F788C51D951AAB0094AA05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F788C11D951A910094AA05 /* UIKit.framework */; };
+		42F788C71D951AC00094AA05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F788C61D951AC00094AA05 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +119,11 @@
 		4247B1171C05455B0048CCDF /* TransformationMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformationMatrix.cpp; sourceTree = "<group>"; };
 		4247B1181C05455B0048CCDF /* TransformationMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationMatrix.h; sourceTree = "<group>"; };
 		4247B1191C05455B0048CCDF /* UnitBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
+		42F788BD1D951A630094AA05 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		42F788BF1D951A850094AA05 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		42F788C11D951A910094AA05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42F788C31D951A9A0094AA05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42F788C61D951AC00094AA05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F788C71D951AC00094AA05 /* QuartzCore.framework in Frameworks */,
+				42F788C51D951AAB0094AA05 /* UIKit.framework in Frameworks */,
+				42F788C41D951A9A0094AA05 /* CoreGraphics.framework in Frameworks */,
+				42F788C01D951A850094AA05 /* CoreImage.framework in Frameworks */,
+				42F788BE1D951A630094AA05 /* libstdc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				4247B0DE1C05441F0048CCDF /* pop */,
+				42F788BC1D951A630094AA05 /* Frameworks */,
 				4247B0DD1C05441F0048CCDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -208,6 +224,18 @@
 				4247B1191C05455B0048CCDF /* UnitBezier.h */,
 			);
 			path = WebCore;
+			sourceTree = "<group>";
+		};
+		42F788BC1D951A630094AA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F788C61D951AC00094AA05 /* QuartzCore.framework */,
+				42F788C31D951A9A0094AA05 /* CoreGraphics.framework */,
+				42F788C11D951A910094AA05 /* UIKit.framework */,
+				42F788BF1D951A850094AA05 /* CoreImage.framework */,
+				42F788BD1D951A630094AA05 /* libstdc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,8 +470,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = pop/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.3rdParty.pop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -460,8 +489,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = pop/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.3rdParty.pop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
